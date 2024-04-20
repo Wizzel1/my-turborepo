@@ -2,7 +2,10 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "web:dev": "dotenv -- turbo dev --filter web",
+    "docs:dev": "dotenv -- turbo dev --filter docs",
+    "web:staging": "dotenv -- turbo staging --filter web",
+    "docs:staging": "dotenv -- turbo staging --filter docs",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
