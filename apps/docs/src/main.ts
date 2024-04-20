@@ -12,6 +12,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
+    <pre>${JSON.stringify(import.meta.env)}</pre>
     ${Header({ title: "Docs" })}
     <div class="card">
       ${Counter()}
